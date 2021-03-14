@@ -1,6 +1,6 @@
 {
   "name": "@ization/core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Kate Miháliková <kate@katemihalikova.cz>",
   "license": "Parity-7.0.0",
   "homepage": "https://ization.dev/",
@@ -11,8 +11,9 @@
     "url": "https://github.com/sponsors/ization"
   },
   "peerDependencies": {
-    "@angular/common": "^11.2.1",
-    "@angular/core": "^11.2.1"
+    "@angular/common": ">=11",
+    "@angular/core": ">=11",
+    "lodash": "4"
   },
   "dependencies": {
     "tslib": "^2.0.0"
