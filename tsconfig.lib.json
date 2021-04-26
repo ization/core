@@ -1,0 +1,19 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@ization/core": [
+        "dist/core"
+      ],
+      "@ization/temporal": [
+        "dist/temporal"
+      ]
+    }
+  },
+  "include": [],
+  "files": [
+    "packages/core/src/public-api.ts",
+    "packages/temporal/src/public-api.ts"
+  ]
+}
