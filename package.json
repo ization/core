@@ -4,11 +4,16 @@
   "author": "Kate Miháliková <kate@katemihalikova.cz>",
   "license": "Parity-7.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint"
+    "build": "npm-run-all build:core build:temporal",
+    "build:core": "ng build core --prod",
+    "postbuild:core": "dts-bundle-generator -o dist/core/ization-core.d.ts dist/core/ization-core.d.ts && rimraf dist/core/public-api.d.ts dist/core/lib",
+    "build:temporal": "ng build temporal --prod",
+    "test": "npm-run-all test:*",
+    "test:core": "ng test core --code-coverage --watch=false",
+    "test:temporal": "ng test temporal --code-coverage --watch=false",
+    "lint": "npm-run-all lint:*",
+    "lint:core": "ng lint core",
+    "lint:temporal": "ng lint temporal"
   },
   "dependencies": {
     "@angular/animations": "~11.2.1",
@@ -19,6 +24,7 @@
     "@angular/platform-browser": "~11.2.1",
     "@angular/platform-browser-dynamic": "~11.2.1",
     "@angular/router": "~11.2.1",
+    "@js-temporal/polyfill": "^0.1.0",
     "lodash": "^4.17.21",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
@@ -32,6 +38,7 @@
     "@types/lodash": "^4.14.168",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "dts-bundle-generator": "^5.9.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.1.0",
@@ -40,7 +47,9 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "ng-packagr": "^11.0.0",
+    "npm-run-all": "^4.1.5",
     "protractor": "~7.0.0",
+    "rimraf": "^3.0.2",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.1.2"
