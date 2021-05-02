@@ -8,12 +8,15 @@
     "build:core": "ng build core --prod",
     "postbuild:core": "dts-bundle-generator -o dist/core/ization-core.d.ts dist/core/ization-core.d.ts && rimraf dist/core/public-api.d.ts dist/core/lib",
     "build:temporal": "ng build temporal --prod",
+    "build:demo": "ng build demo --prod",
+    "start": "ng serve demo",
     "test": "npm-run-all test:*",
     "test:core": "ng test core --code-coverage --watch=false",
     "test:temporal": "ng test temporal --code-coverage --watch=false",
     "lint": "npm-run-all lint:*",
     "lint:core": "ng lint core",
-    "lint:temporal": "ng lint temporal"
+    "lint:temporal": "ng lint temporal",
+    "lint:demo": "ng lint demo"
   },
   "dependencies": {
     "@angular/animations": "~11.2.1",

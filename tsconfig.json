@@ -38,6 +38,7 @@
     ]
   },
   "include": [
+    "demo/**/*.ts",
     "packages/**/*.ts"
   ],
   "angularCompilerOptions": {
