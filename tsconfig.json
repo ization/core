@@ -9,6 +9,9 @@
       ],
       "@ization/temporal": [
         "packages/temporal/src/public-api.ts"
+      ],
+      "@ization/translate": [
+        "packages/translate/src/public-api.ts"
       ]
     },
     "outDir": "./dist/out-tsc",

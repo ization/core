@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CoreDemoModule } from './core-demo/core-demo.module';
+import { TranslateDemoModule } from './translate-demo/translate-demo.module';
 import { TemporalDemoModule } from './temporal-demo/temporal-demo.module';
 
 @NgModule({
@@ -11,6 +12,7 @@ import { TemporalDemoModule } from './temporal-demo/temporal-demo.module';
     BrowserModule,
     CoreDemoModule,
     TemporalDemoModule,
+    TranslateDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
