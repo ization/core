@@ -8,12 +8,16 @@
       ],
       "@ization/temporal": [
         "dist/temporal"
+      ],
+      "@ization/translate": [
+        "dist/translate"
       ]
     }
   },
   "include": [],
   "files": [
     "packages/core/src/public-api.ts",
-    "packages/temporal/src/public-api.ts"
+    "packages/temporal/src/public-api.ts",
+    "packages/translate/src/public-api.ts"
   ]
 }
