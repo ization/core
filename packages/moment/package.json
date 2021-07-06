@@ -1,0 +1,22 @@
+{
+  "name": "@ization/moment",
+  "version": "1.0.0",
+  "author": "Kate Miháliková <kate@katemihalikova.cz>",
+  "license": "Parity-7.0.0",
+  "homepage": "https://ization.dev/",
+  "repository": "github:ization/ization",
+  "bugs": "https://github.com/ization/ization/issues",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ization"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=11",
+    "@angular/core": ">=11",
+    "@ization/core": "1",
+    "moment": "^2.13.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

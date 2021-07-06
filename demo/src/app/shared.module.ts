@@ -5,10 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { IzCoreModule, IzLocaleDefinition } from '@ization/core';
 import { IzTranslateModule } from '@ization/translate';
 import { IzTemporalModule } from '@ization/temporal';
+import { IzMomentModule } from '@ization/moment';
 
 const LOCALES: IzLocaleDefinition[] = [
   {localeCode: 'cs-CZ', translateLocaleCode: 'cs'}, // Czech
-  {localeCode: 'cs-x-japan', translateLocaleCode: 'cs', temporalLocaleCode: 'cs-CZ-u-ca-japanese'}, // Czech with Japanese imperial calendar via custom locale code
+  {localeCode: 'cs-x-japan', translateLocaleCode: 'cs', temporalLocaleCode: 'cs-CZ-u-ca-japanese', momentLocaleCode: 'cs'}, // Czech with Japanese imperial calendar via custom locale code
   {localeCode: 'ja'}, // Japanese
   {localeCode: 'ja-JP-u-ca-japanese', translateLocaleCode: 'ja'}, // Japanese with Japanese imperial calendar
   {localeCode: 'en-GB', translateLocaleCode: 'en'}, // English with British formatting
@@ -27,6 +28,7 @@ const LOCALES: IzLocaleDefinition[] = [
       ).catch(() => ({})),
     }),
     IzTemporalModule,
+    IzMomentModule,
   ],
   exports: [
     CommonModule,
@@ -34,6 +36,7 @@ const LOCALES: IzLocaleDefinition[] = [
     IzCoreModule,
     IzTranslateModule,
     IzTemporalModule,
+    IzMomentModule,
   ],
 })
 export class SharedModule {}

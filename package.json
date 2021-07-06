@@ -4,11 +4,13 @@
   "author": "Kate Miháliková <kate@katemihalikova.cz>",
   "license": "Parity-7.0.0",
   "scripts": {
-    "build": "npm-run-all build:core build:{temporal,translate}",
+    "build": "npm-run-all build:core build:{moment,temporal,translate}",
     "build:core": "ng build core --prod",
     "postbuild:core": "dts-bundle-generator -o dist/core/ization-core.d.ts dist/core/ization-core.d.ts && rimraf dist/core/public-api.d.ts dist/core/lib",
     "build:translate": "ng build translate --prod",
     "build:temporal": "ng build temporal --prod",
+    "build:moment": "ng build moment --prod",
+    "prebuild:demo": "npm run build:demo:translations",
     "build:demo": "ng build demo --prod",
     "build:demo:translations": "run-for-every-file --src demo/src/translations-source/ --file * --run \"messageformat -l {{file-name}} -o demo/src/translations/{{file-name}}.js {{src-file}}\"",
     "start": "ng serve demo",
@@ -16,10 +18,12 @@
     "test:core": "ng test core --code-coverage --watch=false",
     "test:translate": "ng test translate --code-coverage --watch=false",
     "test:temporal": "ng test temporal --code-coverage --watch=false",
+    "test:moment": "ng test moment --code-coverage --watch=false",
     "lint": "npm-run-all lint:*",
     "lint:core": "ng lint core",
     "lint:translate": "ng lint translate",
     "lint:temporal": "ng lint temporal",
+    "lint:moment": "ng lint moment",
     "lint:demo": "ng lint demo"
   },
   "dependencies": {
@@ -34,6 +38,7 @@
     "@js-temporal/polyfill": "^0.1.0",
     "@messageformat/runtime": "^3.0.0",
     "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
