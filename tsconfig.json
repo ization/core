@@ -7,6 +7,9 @@
       "@ization/core": [
         "packages/core/src/__ide__public-api.ts"
       ],
+      "@ization/moment": [
+        "packages/moment/src/public-api.ts"
+      ],
       "@ization/temporal": [
         "packages/temporal/src/public-api.ts"
       ],

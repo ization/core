@@ -126,6 +126,49 @@
         }
       }
     },
+    "moment": {
+      "projectType": "library",
+      "root": "packages/moment",
+      "sourceRoot": "packages/moment/src",
+      "prefix": "iz",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "packages/moment/tsconfig.lib.json",
+            "project": "packages/moment/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "packages/moment/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "packages/moment/src/test.ts",
+            "tsConfig": "packages/moment/tsconfig.spec.json",
+            "karmaConfig": "packages/moment/karma.conf.js",
+            "codeCoverageExclude": [
+              "**/test-helpers/**/*"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "packages/moment/tsconfig.lib.json",
+              "packages/moment/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
     "demo": {
       "projectType": "application",
       "schematics": {
