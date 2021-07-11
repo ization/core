@@ -14,6 +14,8 @@
     "build:demo": "ng build demo --prod",
     "build:demo:translations": "run-for-every-file --src demo/src/translations-source/ --file * --run \"messageformat -l {{file-name}} -o demo/src/translations/{{file-name}}.js {{src-file}}\"",
     "start": "ng serve demo",
+    "docs": "typedoc",
+    "postdocs": "cat typedoc-patch.css >> dist/docs/assets/css/main.css",
     "test": "npm-run-all test:*",
     "test:core": "ng test core --code-coverage --watch=false",
     "test:translate": "ng test translate --code-coverage --watch=false",
@@ -68,6 +70,8 @@
     "run-for-every-file": "^1.1.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
+    "typedoc": "^0.21.4",
+    "typedoc-plugin-mermaid": "^1.3.0",
     "typescript": "~4.1.2"
   }
 }
