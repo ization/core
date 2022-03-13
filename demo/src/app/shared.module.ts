@@ -13,7 +13,7 @@ const LOCALES: IzLocaleDefinition[] = [
   {localeCode: 'ja'}, // Japanese
   {localeCode: 'ja-JP-u-ca-japanese', translateLocaleCode: 'ja'}, // Japanese with Japanese imperial calendar
   {localeCode: 'en-GB', translateLocaleCode: 'en'}, // English with British formatting
-  {localeCode: 'en-US'}, // English with America formatting
+  {localeCode: 'en-US'}, // English with American formatting
 ];
 
 @NgModule({

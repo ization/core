@@ -20,7 +20,7 @@ Both [Demo](https://demo.ization.dev/) and [Docs](https://docs.ization.dev/) are
 
 ### Build packages
 
-Run `npm run build` to build all package into the `dist/*/` directory.
+Run `npm run build` to build all packages into the `dist/*/` directory.
 
 ### Build demo
 
@@ -44,4 +44,4 @@ Run `npm run lint` to run linter on all code, including spec files, of all packa
 
 ## License
 
-This project is licensed under [Parity 7.0.0](LICENSE.md) license. If you want to use this library in open source projects, go ahead, it's completely free! If you'd rather keep your code closed, you have 30 days to try the library in your project, then you need to buy a private license. Have a look at [GitHub Sponsors](https://github.com/sponsors/ization) or contact me directly at <get@ization.dev> to negotiate a deal.
+This project is licensed under [Parity 7.0.0](LICENSE.md) license. If you want to use this library in open source projects, go ahead, it's completely free! If you'd rather keep your code closed, you have 30 days to try the library in your project, then you need to buy a private license. Have a look at [GitHub Sponsors](https://github.com/sponsors/katemihalikova) or contact me directly at <get@ization.dev> to negotiate a deal.

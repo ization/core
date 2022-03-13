@@ -105,4 +105,4 @@ Run `npm run lint:moment` to run linter on all code, including spec files.
 
 ## License
 
-This library is licensed under [Parity 7.0.0](https://github.com/ization/ization/blob/latest/LICENSE.md) license. If you want to use this library in open source projects, go ahead, it's completely free! If you'd rather keep your code closed, you have 30 days to try the library in your project, then you need to buy a private license. Have a look at [GitHub Sponsors](https://github.com/sponsors/ization) or contact me directly at <get@ization.dev> to negotiate a deal.
+This library is licensed under [Parity 7.0.0](https://github.com/ization/ization/blob/latest/LICENSE.md) license. If you want to use this library in open source projects, go ahead, it's completely free! If you'd rather keep your code closed, you have 30 days to try the library in your project, then you need to buy a private license. Have a look at [GitHub Sponsors](https://github.com/sponsors/katemihalikova) or contact me directly at <get@ization.dev> to negotiate a deal.

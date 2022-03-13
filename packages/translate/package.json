@@ -8,7 +8,7 @@
   "bugs": "https://github.com/ization/ization/issues",
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/ization"
+    "url": "https://github.com/sponsors/katemihalikova"
   },
   "peerDependencies": {
     "@angular/common": ">=11",
