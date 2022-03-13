@@ -4,15 +4,29 @@
 
 ## Install
 
-Install ization Core, this plugin, and other required packages:
+Install ization system using Angular CLI (installs ization core and lets you pick ization plugins you want to install, then automatically adds ization code into your project):
 
 ```sh
-npm install @ization/core @ization/moment moment
+npx ng add @ization/core
+```
+
+Alternatively, you can use your favourite package manager. If you use one that installs peer dependencies automatically (e.g. npm ≥7), you can simply install this package together with core package (and any other ization packages you want):
+
+```sh
+npm install @ization/core @ization/moment
+```
+
+Otherwise, you need to install peer dependencies yourself (e.g. npm ≤6) in addition to installing this package. Don't forget to have a look at Readmes of other packages you are going to install as well. Output of `npm install` can help you manage your peer dependencies.
+
+```sh
+npm install @ization/core @ization/moment lodash moment
 ```
 
 ## Configure
 
-Configure `@ization/core` first. Then, import the main module of this plugin into your app module using `IzMomentModule` static method and define configuration of this plugin:
+Installing ization using Angular CLI automatically adds default configuration code into your project so you can start right away.
+
+If you do not use Angular CLI: Configure `@ization/core` first. Then, import the main module of this plugin into your app module using `IzMomentModule` static method and define configuration of this plugin:
 
 ```typescript
 @NgModule({

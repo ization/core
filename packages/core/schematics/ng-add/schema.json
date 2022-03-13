@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "NgAddOptions",
+  "title": "NgAddOptions",
+  "type": "object",
+  "properties": {
+    "fallbackLocale": {
+      "type": "string",
+      "description": "Fallback locale",
+      "default": "en",
+      "x-prompt": "What fallback locale (used as default locale) would you like to use?"
+    },
+    "translate": {
+      "description": "Install translate package?",
+      "type": "boolean",
+      "default": true,
+      "x-prompt": "Would you like to install package for text localization?"
+    },
+    "datetime": {
+      "description": "Install datetime package?",
+      "type": "string",
+      "default": "temporal",
+      "enum": [
+        "temporal",
+        "moment",
+        ""
+      ],
+      "x-prompt": {
+        "message": "Would you like to install package for date & time localization?",
+        "type": "list",
+        "items": [
+          { "value": "temporal",  "label": "Temporal based (Temporal is modern bleeding-edge API for date & time - be part of the future!)" },
+          { "value": "moment", "label": "moment.js based (use for moment.js objects, Date objects, or ISO strings)" },
+          { "value": "", "label": "None" }
+        ]
+      }
+    }
+  },
+  "required": ["fallbackLocale"],
+  "additionalProperties": false
+}
