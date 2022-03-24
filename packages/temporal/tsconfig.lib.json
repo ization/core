@@ -7,7 +7,7 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": [],
+    "typeRoots": ["./types"],
     "lib": [
       "dom",
       "es2020"

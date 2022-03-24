@@ -1,3 +1,4 @@
+// @ts-ignore
 import { Temporal as T } from '@js-temporal/polyfill';
 
 declare global {
@@ -22,16 +23,16 @@ declare global {
     export type PlainYearMonth = T.PlainYearMonth;
     export type TimeZone = T.TimeZone;
     export type ZonedDateTime = T.ZonedDateTime;
-    export namespace now {
-      export const instant: typeof T.now.instant;
-      export const plainDate: typeof T.now.plainDate;
-      export const plainDateISO: typeof T.now.plainDateISO;
-      export const plainDateTime: typeof T.now.plainDateTime;
-      export const plainDateTimeISO: typeof T.now.plainDateTimeISO;
-      export const plainTimeISO: typeof T.now.plainTimeISO;
-      export const timeZone: typeof T.now.timeZone;
-      export const zonedDateTime: typeof T.now.zonedDateTime;
-      export const zonedDateTimeISO: typeof T.now.zonedDateTimeISO;
+    export namespace Now {
+      export const instant: typeof T.Now.instant;
+      export const plainDate: typeof T.Now.plainDate;
+      export const plainDateISO: typeof T.Now.plainDateISO;
+      export const plainDateTime: typeof T.Now.plainDateTime;
+      export const plainDateTimeISO: typeof T.Now.plainDateTimeISO;
+      export const plainTimeISO: typeof T.Now.plainTimeISO;
+      export const timeZone: typeof T.Now.timeZone;
+      export const zonedDateTime: typeof T.Now.zonedDateTime;
+      export const zonedDateTimeISO: typeof T.Now.zonedDateTimeISO;
     }
   }
 }

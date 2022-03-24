@@ -26,7 +26,13 @@ npm install @ization/core @ization/temporal @js-temporal/polyfill lodash
 
 Installing ization using Angular CLI automatically adds default configuration code into your project so you can start right away.
 
-If you do not use Angular CLI: Configure `@ization/core` first. Then, import the main module of this plugin into your app module using `IzTemporalModule` static method and define configuration of this plugin:
+If you do not use Angular CLI: Configure `@ization/core` first. Then, you need to add `Temporal` polyfill to your project - unless you live in the bright future where Temporal is already shipped in browsers, then congratulate! One such polyfill is conveniently packaged with this plugin. Simply import it into your `polyfills.ts` file:
+
+```typescript
+import '@ization/temporal/polyfill';
+```
+
+Then, import the main module of this plugin into your app module using `IzTemporalModule` static method and define configuration of this plugin:
 
 ```typescript
 @NgModule({

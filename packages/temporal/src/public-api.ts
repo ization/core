@@ -3,7 +3,6 @@
  * @module @ization/temporal
  */
 
-import './lib/temporal.types';
 import './lib/locale-definition.patch';
 
 export * from './lib/temporal.module';

@@ -13,6 +13,9 @@
       "@ization/temporal": [
         "packages/temporal/src/public-api.ts"
       ],
+      "@ization/temporal/polyfill": [
+        "packages/temporal/polyfill/public-api.ts"
+      ],
       "@ization/translate": [
         "packages/translate/src/public-api.ts"
       ]
@@ -46,6 +49,9 @@
   "include": [
     "demo/**/*.ts",
     "packages/**/*.ts"
+  ],
+  "exclude": [
+    "packages/temporal/polyfill/**/*.ts"
   ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

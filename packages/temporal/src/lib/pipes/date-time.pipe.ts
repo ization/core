@@ -56,7 +56,7 @@ export class IzZonedDateTimePipe extends IzTemporalPipeBase<Temporal.ZonedDateTi
 })
 export class IzLocalDateTimePipe extends IzTemporalPipeBase<Temporal.ZonedDateTime | Temporal.Instant, SimpleOrZonedFormat | [SimpleFormat, SimpleOrZonedFormat] | ZonedDateTimeFormatOptions> implements PipeTransform {
   /** @internal */
-  public localTimezone = Temporal.now.timeZone();
+  public localTimezone = Temporal.Now.timeZone();
 
   formatTemporal(input: Temporal.ZonedDateTime | Temporal.Instant, options: SimpleOrZonedFormat | [SimpleFormat, SimpleOrZonedFormat] | ZonedDateTimeFormatOptions = 'medium'): string {
     if (typeof options === 'string') {

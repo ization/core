@@ -65,5 +65,5 @@ export class TranslateDemoComponent {
     ]},
   ];
 
-  now = Temporal.now.plainDateISO();
+  now = Temporal.Now.plainDateISO();
 }

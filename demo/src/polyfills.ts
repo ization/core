@@ -18,8 +18,7 @@
  * BROWSER POLYFILLS
  */
 
-import { Temporal } from '@js-temporal/polyfill';
-globalThis.Temporal = globalThis.Temporal || Temporal;
+import '@ization/temporal/polyfill';
 
 /**
  * IE11 requires the following for NgClass support on SVG elements
