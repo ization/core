@@ -16,7 +16,7 @@
     "postbuild:schematics-core": "cpx 'packages/core/schematics/**/*.json' dist/core/schematics",
     "prebuild:demo": "npm run build:demo:translations",
     "build:demo": "ng build demo --prod",
-    "build:demo:translations": "run-for-every-file --src demo/src/translations-source/ --file * --run \"messageformat -l {{file-name}} -o demo/src/translations/{{file-name}}.js {{src-file}}\"",
+    "build:demo:translations": "run-for-every-file --src demo/src/translations-source/ --file '*' --run 'messageformat -l {{file-name}} -o demo/src/translations/{{file-name}}.js {{src-file}}'",
     "start": "ng serve demo",
     "docs": "typedoc",
     "postdocs": "cat typedoc-patch.css >> dist/docs/assets/css/main.css",
