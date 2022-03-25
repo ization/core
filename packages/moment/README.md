@@ -22,11 +22,20 @@ Otherwise, you need to install peer dependencies yourself (e.g. npm ≤6) in add
 npm install @ization/core @ization/moment lodash moment
 ```
 
+### Version Compatibility
+
+If you want to be safe, use the same version for all ization packages. But if needed, ization follows semver so it is also possible to run different versions of packages:
+
+`@ization/moment` | `@ization/core` | Angular | `moment`
+:-: | :-: | :-: | :-:
+2 | 1 - 2 | >= 11 | ^2.13.0
+1 | 1 | >= 11 | ^2.13.0
+
 ## Configure
 
 Installing ization using Angular CLI automatically adds default configuration code into your project so you can start right away.
 
-If you do not use Angular CLI: Configure `@ization/core` first. Then, import the main module of this plugin into your app module using `IzMomentModule` static method and define configuration of this plugin:
+If you do not use Angular CLI: Configure `@ization/core` first. Then, import the main module of this plugin into your app module using `IzMomentModule`:
 
 ```typescript
 @NgModule({

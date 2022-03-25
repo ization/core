@@ -2,7 +2,7 @@
 
 > Internationalization system for Angular
 
-## Installation And Usage
+## Installation, Version Compatibility, Usage
 
 See Readme files of each package:
 
@@ -10,6 +10,12 @@ See Readme files of each package:
 * [`@ization/translate`](packages/translate/README.md)
 * [`@ization/temporal`](packages/temporal/README.md)
 * [`@ization/moment`](packages/moment/README.md)
+
+### Angular compatibility
+
+ization version | Angular version
+:-: | :-:
+1 - 2 | >= 11
 
 ## Demo And Documentation
 

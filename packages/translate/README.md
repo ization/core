@@ -28,6 +28,15 @@ Optionally also install `@messageformat` CLI to get help with managing your tran
 npm install --save-dev @messageformat/cli @messageformat/core
 ```
 
+### Version Compatibility
+
+If you want to be safe, use the same version for all ization packages. But if needed, ization follows semver so it is also possible to run different versions of packages:
+
+`@ization/translate` | `@ization/core` | Angular | `@messageformat/runtime` | `lodash`
+:-: | :-: | :-: | :-: | :-:
+2 | 1 - 2 | >= 11 | 3 | 4
+1 | 2 | >= 11 | 3 | 4
+
 ## Configure
 
 Installing ization using Angular CLI automatically adds default configuration code into your project so you can start right away.

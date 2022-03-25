@@ -22,6 +22,16 @@ Otherwise, you need to install peer dependencies yourself (e.g. npm ≤6) in add
 npm install @ization/core lodash
 ```
 
+### Version Compatibility
+
+If you want to be safe, use the same version for all ization packages. But if needed, ization follows semver so it is also possible to run different versions of packages:
+
+`@ization/core` | Angular | `lodash`
+:-: | :-: | :-:
+1 - 2 | >= 11 | 4
+
+In such case, also consult Readmes of ization plugins to check their own version compatibility.
+
 ## Configure
 
 Installing ization using Angular CLI automatically adds default configuration code into your project so you can start right away.
