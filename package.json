@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm-run-all build:core build:{moment,temporal,translate,schematics-core}",
     "build:core": "ng build core --prod",
-    "postbuild:core": "dts-bundle-generator -o dist/core/ization-core.d.ts dist/core/ization-core.d.ts && rimraf dist/core/public-api.d.ts dist/core/lib",
+    "postbuild:core": "dts-bundle-generator --project packages/core/tsconfig.lib.prod.json -o dist/core/ization-core.d.ts dist/core/ization-core.d.ts && rimraf dist/core/public-api.d.ts dist/core/lib",
     "build:translate": "ng build translate --prod",
     "prebuild:temporal": "cp packages/temporal/types/temporal-polyfill/index.d.ts packages/temporal/polyfill/types-polyfill.ts",
     "build:temporal": "ng build temporal --prod",
